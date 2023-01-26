@@ -7,6 +7,8 @@ public class Clock implements ClockInterface{
     Time time;
     boolean isRunning;
 
+    public Clock() {
+    }
     public Clock(Time time, boolean isRunning) {
         this.time = time;
         this.isRunning = isRunning;
@@ -16,16 +18,16 @@ public class Clock implements ClockInterface{
 
     @Override
     public TimeInterFace getTime() {
-        return null;
+        return this.time;
     }
 
     @Override
     public TimeInterFace setTime() {
-        return null;
+        return this.time;
     }
 
     @Override
     public boolean getIsRunning() {
-        return false;
+        return this.isRunning;
     }
 }

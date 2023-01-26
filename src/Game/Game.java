@@ -12,6 +12,18 @@ public class Game {
 
         Clock player1Clock = player1.getClock();
         Clock player2Clock = player2.getClock();
+
+        player1Clock.setTime().setSeconds(5);
+        player2Clock.setTime().setSeconds(5);
+
+        Thread t1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Player 1's clock is running");
+            }
+        });
+
+
     }
 
 }
