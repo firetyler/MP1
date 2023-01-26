@@ -1,46 +1,44 @@
 package Time;
 
 public class Time implements TimeInterFace{
-    public Time(){
+    int hours ;
+    int  minutes ;
+    int seconds ;
 
-    }
-    @Override
-    public String setTime() {
-        return null;
-    }
-
-    @Override
-    public String getTime() {
-        return null;
+    public Time(int hours, int minutes, int seconds) {
+        this.hours = hours;
+        this.minutes = minutes;
+        this.seconds = seconds;
     }
 
     @Override
     public int getHour() {
-        return 0;
+        return this.hours;
     }
 
     @Override
-    public int setHour() {
-        return 0;
+    public void setHour(int hours) {
+
+         this.hours= hours;
     }
 
     @Override
-    public int setMinuts() {
-        return 0;
+    public void setMinutes(int minutes) {
+         this.minutes = minutes;
     }
 
     @Override
-    public int getMinuts() {
-        return 0;
+    public int getMinutes() {
+        return this.minutes;
     }
 
     @Override
-    public int setSecunds() {
-        return 0;
+    public void setSeconds(int seconds) {
+         this.seconds = seconds;
     }
 
     @Override
-    public int getSecunds() {
-        return 0;
+    public int getSeconds() {
+        return this.seconds;
     }
 }

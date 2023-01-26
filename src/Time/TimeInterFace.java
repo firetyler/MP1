@@ -1,13 +1,11 @@
 package Time;
 
 public interface TimeInterFace {
-    public String setTime();
-    public String getTime();
     public int getHour();
-    public int setHour();
+    public void setHour(int hours);
 
-    public int setMinuts ();
-    public int getMinuts ();
-    public int setSecunds();
-    public int getSecunds();
+    public void setMinutes (int minutes);
+    public int getMinutes ();
+    public void setSeconds(int seconds);
+    public int getSeconds();
 }
