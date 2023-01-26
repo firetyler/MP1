@@ -6,7 +6,9 @@ import Time.TimeInterFace;
 public class Clock implements ClockInterface{
     Time time;
     boolean isRunning;
+    public Clock(){
 
+    }
     public Clock(Time time, boolean isRunning) {
         this.time = time;
         this.isRunning = isRunning;
