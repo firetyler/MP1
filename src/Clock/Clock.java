@@ -22,8 +22,8 @@ public class Clock implements ClockInterface{
     }
 
     @Override
-    public TimeInterFace setTime() {
-        return this.time;
+    public TimeInterFace setTime(TimeInterFace time) {
+        return this.time = (Time) time;
     }
 
     @Override
