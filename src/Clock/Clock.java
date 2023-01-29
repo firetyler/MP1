@@ -5,13 +5,11 @@ import Time.TimeInterFace;
 
 public class Clock implements ClockInterface{
     Time time;
-    boolean isRunning;
 
     public Clock() {
     }
-    public Clock(Time time, boolean isRunning) {
+    public Clock(Time time) {
         this.time = time;
-        this.isRunning = isRunning;
     }
 
 
@@ -26,8 +24,4 @@ public class Clock implements ClockInterface{
         return this.time = (Time) time;
     }
 
-    @Override
-    public boolean getIsRunning() {
-        return this.isRunning;
-    }
 }
