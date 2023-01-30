@@ -65,6 +65,8 @@ public class Game {
                 }
             }
             else if(input.equals("r")){
+                t1.stop();
+                t2.stop();
                 player1Turn = false;
                 player2Turn = true;
                 System.out.println("Enter new time (y/n):");
@@ -89,8 +91,6 @@ public class Game {
                             ,Integer.parseInt(playTimeArray[1])
                             ,Integer.parseInt(playTimeArray[2])));
                 }
-                t1.stop();
-                t2.stop();
             }
         }
     }
