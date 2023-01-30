@@ -37,7 +37,10 @@ public class Game {
         boolean player2Turn = true;
 
 
+        gameControll(scanner, player1Clock, player2Clock, playTimeArray, run1, run2, t1, t2, player1Turn, player2Turn);
+    }
 
+    private static void gameControll(Scanner scanner, Clock player1Clock, Clock player2Clock, String[] playTimeArray, Runner run1, Runner run2, Thread t1, Thread t2, boolean player1Turn, boolean player2Turn) {
         while (true) {
             System.out.println("Enter 's' to complete turn: ");
             String input = scanner.nextLine();
