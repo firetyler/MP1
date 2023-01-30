@@ -5,8 +5,8 @@ public class Time implements TimeInterFace{
     int  minutes ;
     int seconds ;
     boolean t;
+    public Time(){
 
-    public Time() {
     }
     public Time(int hours, int minutes, int seconds) {
         this.hours = hours;
